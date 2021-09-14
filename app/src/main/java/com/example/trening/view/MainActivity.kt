@@ -1,10 +1,8 @@
-package com.example.trening
+package com.example.trening.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.lifecycleScope
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.launch
+import com.example.trening.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

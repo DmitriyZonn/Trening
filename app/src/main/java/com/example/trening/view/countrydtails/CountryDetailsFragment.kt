@@ -1,19 +1,21 @@
-package com.example.trening
+package com.example.trening.view.countrydtails
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
+import com.example.trening.R
+import com.example.trening.model.Country
+import com.example.trening.view.AdapterListener
+import com.example.trening.view.CountriesAdapter
 import kotlinx.android.synthetic.main.fragment_country_details.*
-import kotlinx.coroutines.launch
 
 
 class CountryDetailsFragment : Fragment(), AdapterListener {
 
-    val args: CountryDetailsFragmentArgs by navArgs()
+    val args: com.example.trening.CountryDetailsFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

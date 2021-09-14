@@ -1,8 +1,10 @@
-package com.example.trening
+package com.example.trening.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.trening.R
+import com.example.trening.model.Country
 import kotlinx.android.synthetic.main.country_item.view.*
 
 interface AdapterListener{

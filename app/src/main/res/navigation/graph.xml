@@ -6,7 +6,7 @@
     app:startDestination="@id/countriesFragment">
     <fragment
         android:id="@+id/countriesFragment"
-        android:name="com.example.trening.CountriesFragment"
+        android:name="com.example.trening.view.countries.CountriesFragment"
         android:label="fragment_countries"
         tools:layout="@layout/fragment_countries" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/countryDetailsFragment"
-        android:name="com.example.trening.CountryDetailsFragment"
+        android:name="com.example.trening.view.countrydtails.CountryDetailsFragment"
         android:label="fragment_country_details"
         tools:layout="@layout/fragment_country_details" >
         <argument

@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_countries.*
 import kotlinx.coroutines.launch
 
 
-class CountriesFragment : Fragment() {
+class CountriesFragment : Fragment(), AdapterListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,16 +26,18 @@ class CountriesFragment : Fragment() {
         start.setOnClickListener {
             lifecycleScope.launch {
                 val countriesList = covidStatService.getAllCountriesStat()
-                val adapter = CountriesAdapter(countriesList, findNavController())
+                val adapter = CountriesAdapter(countriesList, this@CountriesFragment)
                 recyclerView.adapter = adapter
             }
         }
 
-        button.setOnClickListener {
-
-        }
-
-
-
     }
+
+
+    override fun onCountryItemClick(country: Country){
+        val action = CountriesFragmentDirections.actionCountriesFragmentToCountryDetailsFragment(country)
+        findNavController().navigate(action)
+    }
+
+
 }

@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.fragment_country_details.*
 import kotlinx.coroutines.launch
 
 
-class CountryDetailsFragment : Fragment() {
+class CountryDetailsFragment : Fragment(), AdapterListener {
 
     val args: CountryDetailsFragmentArgs by navArgs()
 
@@ -32,5 +32,11 @@ class CountryDetailsFragment : Fragment() {
         detailDeathsTextView.text = country.deaths.toString()
         detailRecoveredTextView.text = country.recovered.toString()
 
+        val adapter = CountriesAdapter(emptyList(), this)
+
+    }
+
+    override fun onCountryItemClick(country: Country) {
+        TODO("Not yet implemented")
     }
 }

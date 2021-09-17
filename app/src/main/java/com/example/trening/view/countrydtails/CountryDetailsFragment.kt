@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
 import com.example.trening.R
-import com.example.trening.model.Country
+import com.example.trening.Country
 import com.example.trening.view.AdapterListener
 import com.example.trening.view.CountriesAdapter
 import kotlinx.android.synthetic.main.fragment_country_details.*
@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_country_details.*
 
 class CountryDetailsFragment : Fragment(), AdapterListener {
 
-    val args: com.example.trening.CountryDetailsFragmentArgs by navArgs()
+    val args: CountryDetailsFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

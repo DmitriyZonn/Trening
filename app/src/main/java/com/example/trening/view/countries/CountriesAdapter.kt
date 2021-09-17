@@ -4,7 +4,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.trening.R
-import com.example.trening.model.Country
+import com.example.trening.Country
 import kotlinx.android.synthetic.main.country_item.view.*
 
 interface AdapterListener{

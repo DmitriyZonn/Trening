@@ -38,8 +38,8 @@ class CountriesFragment : Fragment(), AdapterListener {
     }
 
     private fun setObservers() {
-        viewModel.countries.observe(viewLifecycleOwner) {
-            showCountries(it)
+        viewModel.countries.observe(viewLifecycleOwner) {countries->
+            showCountries(countries)
         }
     }
 

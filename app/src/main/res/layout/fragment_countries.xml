@@ -9,6 +9,11 @@
             type="com.example.trening.view.countries.CountriesFragmentViewModel" />
     </data>
 
+    <Button
+        android:id="@+id/someButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"

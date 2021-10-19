@@ -29,7 +29,7 @@ class CountryDetailsFragment : Fragment(), AdapterListener {
         super.onViewCreated(view, savedInstanceState)
 
         val country = args.country
-        nameTextView.text = country.country
+        nameTextView.text = country.name
         detailCasesTextView.text = country.cases.toString()
         detailDeathsTextView.text = country.deaths.toString()
         detailRecoveredTextView.text = country.recovered.toString()

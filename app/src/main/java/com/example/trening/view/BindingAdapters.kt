@@ -1,5 +1,6 @@
 package com.example.trening.view
 
+/*
 import android.view.View
 import android.widget.ProgressBar
 import androidx.databinding.BindingAdapter
@@ -13,6 +14,7 @@ fun visibleIfTrue(view: View, value: Boolean){
     else
         View.INVISIBLE
 }
+*/
 
 /*
 @BindingAdapter("app:list")

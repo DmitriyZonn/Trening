@@ -35,7 +35,7 @@ class CountriesAdapter(private var countries: List<Country>, val listener: Adapt
 }
 class CountryViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     fun bind(country: Country){
-        itemView.countryNameTextView.text = country.country
+        itemView.countryNameTextView.text = country.name
         itemView.casesTextView.text = country.cases.toString()
     }
 }
